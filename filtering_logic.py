@@ -3,15 +3,13 @@ from object_properties import object_properties
 from context_rules import context_rules
 
 
-# =====================================================
 # GLOBAL CONTEXT INFERENCE
-# =====================================================
+
 
 def infer_context(detected_objects):
 
-    # =================================================
     # EXTRACT DETECTED CLASS NAMES
-    # =================================================
+   
 
     detected_classes = [
 
