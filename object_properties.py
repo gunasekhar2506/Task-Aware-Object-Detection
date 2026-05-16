@@ -1,8 +1,7 @@
 object_properties = {
-    # =====================================================
+    
     # FURNITURE / SUPPORT OBJECTS
-    # =====================================================
-
+    
     "chair": [
 
         "rigid_surface",
@@ -13,7 +12,6 @@ object_properties = {
 
         "elevated_surface"
     ],
-
 
     "bench": [
 
@@ -26,7 +24,6 @@ object_properties = {
         "wide_surface"
     ],
 
-
     "dining table": [
 
         "rigid_surface",
@@ -38,12 +35,14 @@ object_properties = {
         "supports_weight"
     ],
 
-
     "bed": [
 
     "large_support_surface",
+
     "supports_weight",
+
     "stable_base",
+
     "elevated_surface"
 
     ],
@@ -59,7 +58,6 @@ object_properties = {
         "ergonomic_design"
     ],
 
-
     "toilet": [
 
         "rigid_surface",
@@ -69,11 +67,8 @@ object_properties = {
         "supports_weight"
     ],
 
-
-    # =====================================================
     # CONTAINERS / LIQUID OBJECTS
-    # =====================================================
-
+   
     "bottle": [
 
         "liquid_container",
@@ -82,7 +77,6 @@ object_properties = {
 
         "portable_object"
     ],
-
 
     "cup": [
 
@@ -93,14 +87,12 @@ object_properties = {
         "portable_object"
     ],
 
-
     "bowl": [
 
         "large_capacity",
 
         "liquid_container"
     ],
-
 
     "wine glass": [
 
@@ -111,7 +103,6 @@ object_properties = {
         "decorative_object"
     ],
 
-
     "vase": [
 
         "decorative_object",
@@ -120,7 +111,6 @@ object_properties = {
 
         "stable_base"
     ],
-
 
     "sink": [
 
@@ -131,11 +121,8 @@ object_properties = {
         "stable_base"
     ],
 
-
-    # =====================================================
     # TOOLS / UTENSILS
-    # =====================================================
-
+  
     "knife": [
 
         "sharp_edge",
@@ -145,14 +132,12 @@ object_properties = {
         "rigid_surface"
     ],
 
-
     "spoon": [
 
         "scooping_surface",
 
         "precision_tool"
     ],
-
 
     "fork": [
 
@@ -161,7 +146,6 @@ object_properties = {
         "precision_tool"
     ],
 
-
     "scissors": [
 
         "sharp_edge",
@@ -169,11 +153,8 @@ object_properties = {
         "precision_tool"
     ],
 
-
-    # =====================================================
     # SPORTS / IMPACT OBJECTS
-    # =====================================================
-
+    
     "baseball bat": [
 
         "impact_surface",
@@ -183,14 +164,12 @@ object_properties = {
         "force_transfer"
     ],
 
-
     "tennis racket": [
 
         "impact_surface",
 
         "lightweight_object"
     ],
-
 
     "skateboard": [
 
@@ -201,14 +180,12 @@ object_properties = {
         "unstable_surface"
     ],
 
-
     "surfboard": [
 
         "wide_surface",
 
         "lightweight_object"
     ],
-
 
     "snowboard": [
 
@@ -217,7 +194,6 @@ object_properties = {
         "slippery_surface"
     ],
 
-
     "skis": [
 
         "slippery_surface",
@@ -225,10 +201,7 @@ object_properties = {
         "unstable_surface"
     ],
 
-
-    # =====================================================
     # STORAGE / SUPPORT OBJECTS
-    # =====================================================
 
     "backpack": [
 
@@ -237,14 +210,12 @@ object_properties = {
         "portable_object"
     ],
 
-
     "suitcase": [
 
         "portable_object",
 
         "rigid_surface"
     ],
-
 
     "book": [
 
@@ -253,18 +224,14 @@ object_properties = {
         "flammable_material"
     ],
 
-
-    # =====================================================
     # VEHICLES / LARGE OBJECTS
-    # =====================================================
-
+    
     "boat": [
 
         "supports_weight",
 
         "wide_surface"
     ],
-
 
     "car": [
 
@@ -273,14 +240,12 @@ object_properties = {
         "enclosed_space"
     ],
 
-
     "bus": [
 
         "supports_weight",
 
         "large_capacity"
     ],
-
 
     "truck": [
 
@@ -289,11 +254,8 @@ object_properties = {
         "large_capacity"
     ],
 
-
-    # =====================================================
     # FIRE / EMERGENCY OBJECTS
-    # =====================================================
-
+    
     "fire hydrant": [
 
         "large_capacity",
@@ -301,22 +263,17 @@ object_properties = {
         "rapid_liquid_delivery"
     ],
 
-
-    # =====================================================
     # FOOD / CONTEXT OBJECTS
-    # =====================================================
-
+    
     "cake": [
 
         "soft_surface"
     ],
 
-
     "donut": [
 
         "soft_surface"
     ],
-
 
     "potted plant": [
 
@@ -325,10 +282,7 @@ object_properties = {
         "stable_base"
     ],
 
-
-    # =====================================================
     # HUMAN / CONTEXT OBJECTS
-    # =====================================================
 
     "person": [
 
