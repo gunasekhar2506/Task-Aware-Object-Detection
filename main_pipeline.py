@@ -1,37 +1,32 @@
 from yolo_detection import detect_objects
-from filtering_logic import filter_objects
+from filtering_logic import filter_objects, infer_context
 
 import cv2
 
+# USER INPUT : IMAGE PATH
 
-# =====================================================
-# IMAGE PATH
-# =====================================================
+image_path = input(
 
-image_path = "val2017/000000007574.jpg"
-
-
-# =====================================================
-# USER INPUT : TASK
-# =====================================================
-
-selected_task = input(
-
-    "Enter Task Name : "
+    "Enter Image Path : "
 
 )
 
+# USER INPUT : TASK
 
-# =====================================================
+selected_task = input(
+
+    "Enter Task : "
+
+)
+
 # RUN YOLO OBJECT DETECTION
-# =====================================================
 
-detected_objects = detect_objects(image_path)
+detected_objects = detect_objects(
 
+    image_path
+)
 
-# =====================================================
 # PRINT DETECTED OBJECTS
-# =====================================================
 
 print("\nDetected Objects:\n")
 
@@ -39,44 +34,39 @@ for obj in detected_objects:
 
     print(obj)
 
+# GLOBAL CONTEXT INFERENCE
 
-# =====================================================
-# RUN TASK-AWARE AFFORDANCE REASONING
-# =====================================================
+inferred_context = infer_context(
+
+    detected_objects
+)
+
+print(
+
+    "\nInferred Context : ",
+    inferred_context
+)
+
+# TASK-AWARE FILTERING
 
 best_object = filter_objects(
 
     selected_task,
     detected_objects
-
 )
 
-
-# =====================================================
 # LOAD IMAGE
-# =====================================================
 
 image = cv2.imread(image_path)
 
-
-# =====================================================
-# IF BEST OBJECT FOUND
-# =====================================================
+# IF OBJECT FOUND
 
 if best_object is not None:
 
-    class_name = best_object["class"]
-
-    confidence = best_object["confidence"]
-
-    final_score = best_object["final_score"]
-
     x1, y1, x2, y2 = best_object["box"]
 
-    # =================================================
-    # DRAW BEST OBJECT BOUNDING BOX
-    # =================================================
-
+    # DRAW BOUNDING BOX
+    
     cv2.rectangle(
 
         image,
@@ -90,54 +80,22 @@ if best_object is not None:
         3
     )
 
-    # =================================================
-    # LABEL
-    # =================================================
-
-    label = (
-
-        f"{class_name} | "
-        f"Score: {final_score}"
-
-    )
-
-    cv2.putText(
-
-        image,
-
-        label,
-
-        (x1, y1 - 10),
-
-        cv2.FONT_HERSHEY_SIMPLEX,
-
-        0.7,
-
-        (0, 255, 0),
-
-        2
-    )
-
-    # =================================================
-    # PRINT FINAL RESULT
-    # =================================================
-
-    print("\nBEST OBJECT SELECTED:\n")
+    print("\nBest Object Found\n")
 
     print(best_object)
 
 else:
 
-    print("\nNo suitable object found.")
+    print(
 
+        "\nNo suitable object found for this task."
+    )
 
-# =====================================================
-# SHOW FINAL OUTPUT IMAGE
-# =====================================================
+# SHOW OUTPUT IMAGE
 
 cv2.imshow(
 
-    "Task-Aware Object Selection",
+    "Task-Aware Object Detection",
 
     image
 )
