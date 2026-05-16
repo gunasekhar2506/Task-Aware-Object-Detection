@@ -54,14 +54,16 @@ tasks= {
     # PROPERTY MODIFIERS
     # ==========================================
     "property_modifiers": {
-        "large_flat_surface": 3,
-        "rigid_surface": 2,
-        "stable_base": 3,
-        "high_elevation": 2,
-        "soft_surface": -3,
-        "unstable_surface": -4,
-        "rolling_object": -5,
-        "fragile_surface": -3
+        
+    "large_support_surface": 4,
+    "stable_base": 4,
+    "supports_weight": 4,
+    "elevated_surface": 2,
+    "soft_surface": -1,
+    "unstable_surface": -5,
+    "fragile_surface": -6,
+    "rollable_object": -7
+
     }
 },
 "sit_comfortably": {  
@@ -823,4 +825,6 @@ tasks= {
     }
 }
 }
+
+
 
