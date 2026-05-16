@@ -41,14 +41,13 @@ object_properties = {
 
     "bed": [
 
-        "soft_surface",
+    "large_support_surface",
+    "supports_weight",
+    "stable_base",
+    "elevated_surface"
 
-        "supports_weight",
-
-        "wide_surface"
     ],
-
-
+    
     "couch": [
 
         "soft_surface",
