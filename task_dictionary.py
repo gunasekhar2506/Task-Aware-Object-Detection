@@ -2,9 +2,9 @@ tasks= {
 "step_on_something": {
     "required_affordance":
     "stable elevated support for standing and increasing reach",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+   
     "scores": {
         # BEST OBJECTS
         "bench": 10,
@@ -23,9 +23,9 @@ tasks= {
         "backpack": 1,
         "skis": 1
     },
-    # ==========================================
+    
     # CONTEXT MODIFIERS
-    # ==========================================
+  
 
     "context_modifiers": {
         "beach": {
@@ -50,9 +50,9 @@ tasks= {
             "skis": 2
         }
     },
-    # ==========================================
+    
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         
     "large_support_surface": 4,
@@ -69,9 +69,9 @@ tasks= {
 "sit_comfortably": {  
     "required_affordance":
     "comfortable stable support for seated or resting posture",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+    
     "scores": {
         # BEST OBJECTS
         "couch": 10,
@@ -87,9 +87,9 @@ tasks= {
         "truck": 1,
         "suitcase": 1
     },
-    # ==========================================
+
     # CONTEXT MODIFIERS
-    # ==========================================
+   
     "context_modifiers": {
         "office": {
             "chair": 5,
@@ -114,9 +114,9 @@ tasks= {
             "bench": 1
         }
     },
-    # ==========================================
+    
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         "soft_surface": 4,
         "back_support": 3,
@@ -132,9 +132,9 @@ tasks= {
 "place_flowers": {
     "required_affordance":
     "stable aesthetically suitable containment for holding flowers upright",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+   
     "scores": {
         # BEST OBJECTS
         "vase": 10,
@@ -151,9 +151,9 @@ tasks= {
     },
 
 
-    # ==========================================
+  
     # CONTEXT MODIFIERS
-    # ==========================================
+   
     "context_modifiers": {
         "dining_room": {
             "vase": 5,
@@ -176,9 +176,9 @@ tasks= {
             "bowl": -2
         }
     },
-    # ==========================================
+  
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         "tall_container": 4,
         "stable_base": 3,
@@ -194,9 +194,9 @@ tasks= {
 "get_potatoes_out_of_fire": { 
     "required_affordance":
     "safe retrieval and handling of hot objects from dangerous heat source",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+    
     "scores": {
         # BEST OBJECTS
         "spoon": 10,
@@ -214,9 +214,9 @@ tasks= {
         "bottle": 1,
         "book": 1
     },
-    # ==========================================
+  
     # CONTEXT MODIFIERS
-    # ==========================================
+    
     "context_modifiers": {
         "kitchen": {
             "spoon": 3,
@@ -240,9 +240,9 @@ tasks= {
             "book": -5
         }
     },
-    # ==========================================
+    
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         "long_reach": 3,
         "heat_resistant": 4,
@@ -258,9 +258,9 @@ tasks= {
 "water_plant": {
     "required_affordance":
     "portable controlled transfer of water to plant",
-    # ==========================================
+   
     # BASE TASK SCORES
-    # ==========================================
+    
     "scores": {
         # BEST OBJECTS
         "bottle": 10,
@@ -274,9 +274,9 @@ tasks= {
         "potted plant": 2,
         "refrigerator": 1
     },
-    # ==========================================
+   
     # CONTEXT MODIFIERS
-    # ==========================================
+    
     "context_modifiers": {
         "garden": {
             "bottle": 4,
@@ -298,9 +298,9 @@ tasks= {
             "cup": -1
         }
     },
-    # ==========================================
+  
     # PROPERTY MODIFIERS
-    # ==========================================
+   
     "property_modifiers": {
         "large_liquid_capacity": 3,
         "controlled_pouring": 4,
@@ -316,9 +316,9 @@ tasks= {
 "get_lemon_out_of_tea": {
     "required_affordance":
     "precise retrieval of small object from liquid container",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+    
     "scores": {
         # BEST OBJECTS
         "spoon": 10,
@@ -332,9 +332,9 @@ tasks= {
         "dining table": 1,
         "bottle": 1
     },
-    # ==========================================
+   
     # CONTEXT MODIFIERS
-    # ==========================================
+    
     "context_modifiers": {
         "restaurant": {
             "spoon": 4,
@@ -354,9 +354,9 @@ tasks= {
             "knife": 1
         }
     },
-    # ==========================================
+  
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         "scooping_surface": 4,
         "precision_control": 3,
@@ -372,9 +372,9 @@ tasks= {
 "dig_hole": {
     "required_affordance":
     "penetration and displacement of ground material",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+    
     "scores": {
         # BEST OBJECTS
         "knife": 10,
@@ -390,9 +390,9 @@ tasks= {
         "boat": 1,
         "bench": 1
     },
-    # ==========================================
+    
     # CONTEXT MODIFIERS
-    # ==========================================
+   
     "context_modifiers": {
         "beach": {
             "surfboard": 4,
@@ -414,9 +414,9 @@ tasks= {
             "spoon": -1
         }
     },
-    # ==========================================
+    
     # PROPERTY MODIFIERS
-    # ==========================================
+   
     "property_modifiers": {
         "sharp_edge": 4,
         "rigid_structure": 3,
@@ -432,9 +432,9 @@ tasks= {
 "open_bottle_of_beer": {
     "required_affordance":
     "rigid leverage-based cap removal",
-    # ==========================================
+   
     # BASE TASK SCORES
-    # ==========================================
+    
     "scores": {
         # BEST OBJECTS
         "knife": 10,
@@ -449,9 +449,9 @@ tasks= {
         "refrigerator": 1,
         "person": 1
     },
-    # ==========================================
+   
     # CONTEXT MODIFIERS
-    # ==========================================
+    
     "context_modifiers": {
         "kitchen": {
             "knife": 4,
@@ -473,9 +473,9 @@ tasks= {
             "bottle": 1
         }
     },
-    # ==========================================
+   
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         "rigid_thin_edge": 5,
         "leverage_capability": 4,
@@ -491,9 +491,9 @@ tasks= {
 "open_parcel": {
     "required_affordance":
     "controlled cutting or tearing of packaging material",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+    
     "scores": {
         # BEST OBJECTS
         "scissors": 10,
@@ -506,9 +506,9 @@ tasks= {
         "dining table": 1,
         "book": 1
     },
-    # ==========================================
+    
     # CONTEXT MODIFIERS
-    # ==========================================
+
     "context_modifiers": {
         "office": {
             "scissors": 5,
@@ -528,9 +528,9 @@ tasks= {
             "fork": 2
         }
     },
-    # ==========================================
+   
     # PROPERTY MODIFIERS
-    # ==========================================
+   
     "property_modifiers": {
         "sharp_edge": 5,
         "cutting_precision": 4,
@@ -546,9 +546,9 @@ tasks= {
 "serve_wine": {
     "required_affordance":
     "socially appropriate serving and drinking of wine",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+
     "scores": {
         # BEST OBJECTS
         "wine glass": 10,
@@ -561,9 +561,9 @@ tasks= {
         "chair": 1,
         "person": 1
     },
-    # ==========================================
+   
     # CONTEXT MODIFIERS
-    # ==========================================
+  
     "context_modifiers": {
         "restaurant": {
             "wine glass": 6,
@@ -584,9 +584,9 @@ tasks= {
             "cup": 1
         }
     },
-    # ==========================================
+    
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         "beverage_specific_design": 5,
         "elegant_appearance": 4,
@@ -602,9 +602,9 @@ tasks= {
 "pour_sugar": {
     "required_affordance":
     "controlled transfer of granular material with minimal spilling",
-    # ==========================================
+   
     # BASE TASK SCORES
-    # ==========================================
+   
     "scores": {
         # BEST OBJECTS
         "cup": 10,
@@ -618,9 +618,9 @@ tasks= {
         "cake": 1,
         "donut": 1
     },
-    # ==========================================
+   
     # CONTEXT MODIFIERS
-    # ==========================================
+    
     "context_modifiers": {
         "kitchen": {
             "spoon": 4,
@@ -642,9 +642,9 @@ tasks= {
             "wine glass": -2
         }
     },
-    # ==========================================
+    
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         "controlled_pouring": 4,
         "precise_quantity_transfer": 4,
@@ -660,9 +660,9 @@ tasks= {
 "smear_butter": {
     "required_affordance":
     "controlled smooth spreading of soft material on surface",
-    # ==========================================
+   
     # BASE TASK SCORES
-    # ==========================================
+   
     "scores": {
         # BEST OBJECTS
         "knife": 10,
@@ -675,9 +675,9 @@ tasks= {
         "cake": 1,
         "dining table": 1
     },
-    # ==========================================
+ 
     # CONTEXT MODIFIERS
-    # ==========================================
+    
     "context_modifiers": {
         "breakfast": {
             "knife": 5,
@@ -696,9 +696,9 @@ tasks= {
             "fork": 1
         }
     },
-    # ==========================================
+ 
     # PROPERTY MODIFIERS
-    # ==========================================
+   
     "property_modifiers": {
         "flat_spreading_surface": 5,
         "smooth_edge": 4,
@@ -714,9 +714,9 @@ tasks= {
 "extinguish_fire": {
     "required_affordance":
     "rapid and safe suppression of fire using liquid delivery",
-    # ==========================================
+   
     # BASE TASK SCORES
-    # ==========================================
+    
     "scores": {
         # BEST OBJECTS
         "fire hydrant": 10,
@@ -730,9 +730,9 @@ tasks= {
         "boat": 1,
         "person": 1
     },
-    # ==========================================
+    
     # CONTEXT MODIFIERS
-    # ==========================================
+   
     "context_modifiers": {
         "kitchen": {
             "sink": 5,
@@ -753,9 +753,9 @@ tasks= {
             "bowl": 2
         }
     },
-    # ==========================================
+  
     # PROPERTY MODIFIERS
-    # ==========================================
+   
     "property_modifiers": {
         "large_liquid_capacity": 5,
         "rapid_liquid_delivery": 4,
@@ -771,9 +771,9 @@ tasks= {
 "pound_carpet": {
     "required_affordance":
     "generation of repeated impact force for carpet cleaning",
-    # ==========================================
+    
     # BASE TASK SCORES
-    # ==========================================
+   
     "scores": {
         # BEST OBJECTS
         "baseball bat": 10,
@@ -787,9 +787,9 @@ tasks= {
         "backpack": 1,
         "suitcase": 1
     },
-    # ==========================================
+    
     # CONTEXT MODIFIERS
-    # ==========================================
+    
     "context_modifiers": {
         "outdoor_cleaning": {
             "baseball bat": 5,
@@ -809,9 +809,9 @@ tasks= {
             "chair": 2
         }
     },
-    # ==========================================
+    
     # PROPERTY MODIFIERS
-    # ==========================================
+    
     "property_modifiers": {
         "large_impact_surface": 4,
         "swingability": 4,
