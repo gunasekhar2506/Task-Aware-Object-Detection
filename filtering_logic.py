@@ -34,6 +34,10 @@ def infer_context(detected_objects):
 
         score = 0
 
+        strong_matches = 0
+
+        medium_matches = 0
+
         # =============================================
         # STRONG EVIDENCE
         # =============================================
@@ -44,7 +48,9 @@ def infer_context(detected_objects):
 
             if item in detected_classes:
 
-                score += 3
+                strong_matches += 1
+
+                score += 5
 
         # =============================================
         # MEDIUM EVIDENCE
@@ -56,7 +62,27 @@ def infer_context(detected_objects):
 
             if item in detected_classes:
 
+                medium_matches += 1
+
                 score += 1
+
+        # =============================================
+        # CONTEXT VALIDATION
+        # =============================================
+
+        # weak-only contexts are unreliable
+
+        if strong_matches == 0 and medium_matches < 2:
+
+            score = 0
+
+        # =============================================
+        # BONUS FOR MULTIPLE STRONG OBJECTS
+        # =============================================
+
+        if strong_matches >= 2:
+
+            score += 3
 
         # =============================================
         # SAVE SCORE
@@ -65,7 +91,7 @@ def infer_context(detected_objects):
         context_scores[context_name] = score
 
     # =================================================
-    # NO CONTEXT FOUND
+    # NO CONTEXTS
     # =================================================
 
     if len(context_scores) == 0:
@@ -83,11 +109,13 @@ def infer_context(detected_objects):
         key=context_scores.get
     )
 
+    best_score = context_scores[best_context]
+
     # =================================================
-    # IF SCORE TOO LOW
+    # UNKNOWN CONTEXT HANDLING
     # =================================================
 
-    if context_scores[best_context] == 0:
+    if best_score < 5:
 
         return None
 
@@ -126,10 +154,14 @@ def filter_objects(
         detected_objects
     )
 
-    print("\nInferred Context : ", selected_context)
+    print(
+
+        "\nInferred Context : ",
+        selected_context
+    )
 
     # =================================================
-    # STORE FINAL SCORED OBJECTS
+    # STORE FINAL OBJECTS
     # =================================================
 
     final_objects = []
@@ -143,7 +175,7 @@ def filter_objects(
         class_name = obj["class"]
 
         # =============================================
-        # IGNORE OBJECTS NOT RELEVANT TO TASK
+        # IGNORE IRRELEVANT OBJECTS
         # =============================================
 
         if class_name not in base_scores:
@@ -209,7 +241,7 @@ def filter_objects(
         final_objects.append(obj)
 
     # =================================================
-    # NO VALID OBJECTS
+    # NO OBJECTS
     # =================================================
 
     if len(final_objects) == 0:
@@ -228,7 +260,7 @@ def filter_objects(
     )
 
     # =================================================
-    # PRINT ALL SCORES
+    # PRINT SCORES
     # =================================================
 
     print("\nObject Scores:\n")
